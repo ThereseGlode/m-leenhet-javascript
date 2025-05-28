@@ -1,46 +1,104 @@
-* {
-  box-sizing: border-box;
-}
-
+/* styles.css */
+/*
 body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  padding: 0;
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  color: #333;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color: #ff6f61;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
+  color: white;
+  margin: 0 1rem;
   text-decoration: none;
-  color: #555;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+nav a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px yellow;
 }
 
 main {
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+.sectionHero {
+  background: #ffffffdd;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  animation: floaty 5s ease-in-out infinite;
 }
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  color: #222;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.6rem;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff6f61;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-top: 0.5rem;
+  accent-color: #ff6f61;
+}
+
+input[type="button"],
+button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="button"]:hover,
+button:hover {
+  background-color: #e85c50;
+  transform: scale(1.05);
+}
+
+*/

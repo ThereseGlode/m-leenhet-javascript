@@ -17,7 +17,45 @@
       <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <section id="home" class="sectionHero">
+      <form>
+         <label for="inputText">
+          Skriv navnet ditt
+          <input type="text" name="inputText" id="inputText" placeholder="Skriv navnet ditt">
+         </label>
+
+         <label for="inputNumber">
+          Skriv et tall
+          <input type="number" name="inputNumber" id="inputNumber" placeholder="eks.1234">
+         </label>
+
+         <label for="inputCheckboxOne">
+          Velg epler
+          <input type="checkbox" name="inputCheckboxOne" id="inputCheckboxOne">
+         </label>
+
+         <label for="inputCheckboxTwo">
+          Velg bananer
+          <input type="checkbox" name="inputCheckboxTwo" id="inputCheckboxOTwo">
+         </label>
+
+         <label for="selectOptions">
+          Velg mellom
+          <select name="selectOptions" id="selectOptions">
+            <option value="pickUp">Hent selv</option>
+            <option value="deliver">Leveranse</option>
+          </select>
+         </label>
+
+        <!--
+        <Input type button også mulig å bruke>
+        -->
+         <button id="submitButton">Send</button>
+
+      </form>
+      <p id="displayResults"></p>
+      </section>
+      
     </main>
   </body>
 </html>
